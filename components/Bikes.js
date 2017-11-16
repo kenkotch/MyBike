@@ -1,5 +1,6 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button, Image, TouchableHighlight } from 'react-native'
+import { StyleSheet, View, Image, TouchableHighlight } from 'react-native'
+import { Container, Button, Text } from 'native-base';
 import Header from './Header'
 import Start from './Start'
 import Maintenance from './Maintenance'
