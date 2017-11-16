@@ -5,19 +5,16 @@ import Start from './Start'
 import Maintenance from './Maintenance'
 
 const Bikes = (props) => {
-console.log(props.bikes)
+  console.log(props)
+  //props.blue()
   return (
 
-    <View style={ styles.background }>
-
-      <Header />
-      <Start />
-      <Maintenance bikes={ props.bikes }/>
-
-
-    </View>
-
-  )
+   <View style={ styles.background }>
+    <Header />
+    <Start patch={ props.patch} />
+    <Maintenance bikes={ props.bikes }/>
+   </View>
+ )
 
 }
 

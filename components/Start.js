@@ -1,12 +1,37 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React, {Component} from 'react'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity} from 'react-native'
 import { Button } from 'native-base'
 
-var Start = () => (
 
-  <Button style={ styles.button } light title='shit'>
-    <Text>     Light     </Text>
-  </Button>
-)
+class Start extends React.Component{
+  constructor(props) {
+  super(props);
+  this.state = { text: '' };
+}
+
+ inducer=(event)=>{
+    this.props.patch('blue dreams')
+  }
+
+ render(){
+    console.log(this.state.text)
+    return(
+      <View>
+        <TextInput
+          value={this.state.text}
+          style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+          onChangeText={(text) => this.setState({text})}
+        />
+        <Button
+          onPress={console.log('start')}
+          title="Learn More"
+          color="#841584 "
+          accessibilityLabel="Learn more about this purple button"
+        />
+      </View>
+    )
+  }
+}
+
 
 export default Start
