@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import { Container, Button, Text } from 'native-base';
+import { Container, Button, Text, Icon } from 'native-base';
 import Header from './Header'
 
 const Login = () => {
@@ -9,7 +9,7 @@ const Login = () => {
     <View style={styles.background}>
       <Header />
       <View>
-        <Button block info
+        <Button full dark
           onPress={() => Actions.Bikes()}
           style={styles.login}
         >
