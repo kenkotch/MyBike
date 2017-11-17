@@ -10,7 +10,7 @@ module.exports = StyleSheet.create({
   },
   logo: {
     backgroundColor: 'transparent',
-    // fontFamily: 'Font Awesome',
+    fontFamily: 'FontAwesome',
     fontSize: 60,
     marginTop: 20,
     marginBottom: 1,
@@ -18,7 +18,7 @@ module.exports = StyleSheet.create({
     flex: 1
   },
   muliLight: {
-    // fontFamily: 'Muli Light',
+    fontFamily: 'Muli-Light',
     fontSize: 45,
     marginTop: 20,
     marginBottom: 1,
@@ -33,12 +33,12 @@ module.exports = StyleSheet.create({
   },
   subHeader: {
     alignItems: 'center',
-    // fontFamily: 'Muli Regular',
+    fontFamily: 'Muli',
     fontSize: 35
   },
   maintData: {
     alignItems: 'center',
-    // fontFamily: 'Muli Regular',
+    fontFamily: 'Muli',
     fontSize: 20
   },
   hozRule: {
@@ -48,7 +48,7 @@ module.exports = StyleSheet.create({
   },
   button: {
     alignItems: 'center',
-    // fontFamily: 'Muli Light',
+    fontFamily: 'Muli-Light',
     fontSize: 35
   }
 
