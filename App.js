@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import { Container, Button, Text } from 'native-base';
-// // import { Font } from 'expo';
+// import { Font } from 'expo';
 styles = require('./assets/stylesheet/Styles')
 
 import Bikes from './components/Bikes'
