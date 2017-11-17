@@ -10,10 +10,6 @@ import Start from './components/Start'
 import AddBike from './components/AddBike'
 import Login from './components/Login'
 
-import GreenScreen from './components/GreenScreen'
-import ScarletScreen from './components/ScarletScreen'
-import BlueScreen from './components/BlueScreen'
-
 let fetchThis = 'https://roads.googleapis.com/v1/snapToRoads?path='
 
 export default class App extends React.Component {
@@ -95,19 +91,16 @@ export default class App extends React.Component {
 
 
   render() {
-    setTimeout(this.getLocation, 6000)
+    // setTimeout(this.getLocation, 6000)
     return (
     //
-      this.state.isLoading ?
-      <View><Text>Loading...</Text></View> :
-      // <View style={styles.container}>
-    //     <Bikes
-    //       bikes={ this.state.bikes }
-    //     />
-    //     <Text>{ this.state.holder }</Text>
+    //   this.state.isLoading ?
+    //   <View><Text>Loading...</Text></View> :
+    //   <View style={styles.container}>
+    //     <Login />
     //   </View>
-    //
-    // );
+    // )
+
     <Router>
       <Scene key="root" hideNavBar>
         <Scene key="login"
