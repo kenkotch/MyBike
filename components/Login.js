@@ -10,7 +10,7 @@ const Login = () => {
       <Header />
       <View>
         <Button block info
-          onPress={() => Actions.GreenScreen()}
+          onPress={() => Actions.Bikes()}
           style={styles.login}
         >
           <Text style={{fontFamily: 'FontAwesome'}}>&#xf1a0;</Text>

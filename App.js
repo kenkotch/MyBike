@@ -115,9 +115,10 @@ export default class App extends React.Component {
           title="Login"
           initial
         />
-        <Scene key="GreenScreen"
-          component={GreenScreen}
-          title="Green Screen"
+      <Scene key="Bikes"
+          component={Bikes}
+          bikes={ this.state.bikes }
+          title="Bike(s)"
         />
     </Scene>
     </Router>
