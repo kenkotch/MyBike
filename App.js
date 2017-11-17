@@ -55,13 +55,13 @@ export default class App extends React.Component {
     //     //    'Muli Regular': require('./assets/fonts/Muli-Regular.ttf'),
     //     //  });
     //
-    const bikeRes = await fetch('https://my-bike.herokuapp.com/bikes')
-    const bikeJson = await bikeRes.json()
+    // const bikeRes = await fetch('https://my-bike.herokuapp.com/bikes')
+    // const bikeJson = await bikeRes.json()
 
   this.setState({
-    bikes: [
-      ...bikeJson
-    ],
+    // bikes: [
+    //   ...bikeJson
+    // ],
     isLoading: false,
     locations: locationJSON
   })
@@ -91,11 +91,11 @@ export default class App extends React.Component {
 
 
   render() {
-    // setTimeout(this.getLocation, 6000)
+    setTimeout(this.getLocation, 6000)
     return (
-    //
-    //   this.state.isLoading ?
-    //   <View><Text>Loading...</Text></View> :
+
+      this.state.isLoading ?
+      <View><Text>Loading...</Text></View> :
     //   <View style={styles.container}>
     //     <Login />
     //   </View>

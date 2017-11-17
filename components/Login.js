@@ -9,7 +9,7 @@ const Login = () => {
     <View style={styles.background}>
       <Header />
       <View>
-        <Button block info
+        <Button block full dark
           onPress={() => Actions.Bikes()}
           style={styles.login}
         >
