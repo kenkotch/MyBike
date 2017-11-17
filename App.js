@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import { Container, Button, Text } from 'native-base';
-// import { Font } from 'expo';
+import { Router, Scene } from 'react-native-router-flux';
 styles = require('./assets/stylesheet/Styles')
 
 import Bikes from './components/Bikes'
 import Maintenance from './components/Maintenance'
 import Start from './components/Start'
 import AddBike from './components/AddBike'
+import Login from './components/Login'
+
+import GreenScreen from './components/GreenScreen'
+import ScarletScreen from './components/ScarletScreen'
+import BlueScreen from './components/BlueScreen'
 
 let fetchThis = 'https://roads.googleapis.com/v1/snapToRoads?path='
 
@@ -92,16 +97,30 @@ export default class App extends React.Component {
   render() {
     setTimeout(this.getLocation, 6000)
     return (
-
+    //
       this.state.isLoading ?
       <View><Text>Loading...</Text></View> :
-      <View style={styles.container}>
-        <Bikes
-          bikes={ this.state.bikes }
+      // <View style={styles.container}>
+    //     <Bikes
+    //       bikes={ this.state.bikes }
+    //     />
+    //     <Text>{ this.state.holder }</Text>
+    //   </View>
+    //
+    // );
+    <Router>
+      <Scene key="root">
+        <Scene key="login"
+          component={Login}
+          title="Login"
+          initial
         />
-        <Text>{ this.state.holder }</Text>
-      </View>
-
-    );
+        <Scene key="GreenScreen"
+          component={GreenScreen}
+          title="Green Screen"
+        />
+    </Scene>
+    </Router>
+  )
   }
 }

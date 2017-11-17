@@ -17,6 +17,11 @@ module.exports = StyleSheet.create({
     alignItems: 'center',
     flex: 1
   },
+  login: {
+    marginTop: -10,
+    alignItems: 'center',
+    flexDirection: 'row'
+  },
   muliLight: {
     fontFamily: 'Muli-Light',
     fontSize: 45,
