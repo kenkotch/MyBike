@@ -10,10 +10,6 @@ import Start from './components/Start'
 import AddBike from './components/AddBike'
 import Login from './components/Login'
 
-import GreenScreen from './components/GreenScreen'
-import ScarletScreen from './components/ScarletScreen'
-import BlueScreen from './components/BlueScreen'
-
 let fetchThis = 'https://roads.googleapis.com/v1/snapToRoads?path='
 
 export default class App extends React.Component {
