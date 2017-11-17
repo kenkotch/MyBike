@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import { Container, Button, Text } from 'native-base';
-import { Router, Scene } from 'react-native-router-flux';
+import { Router, Scene, navBar } from 'react-native-router-flux';
 styles = require('./assets/stylesheet/Styles')
 
 import Bikes from './components/Bikes'
@@ -109,7 +109,7 @@ export default class App extends React.Component {
     //
     // );
     <Router>
-      <Scene key="root">
+      <Scene key="root" hideNavBar>
         <Scene key="login"
           component={Login}
           title="Login"
@@ -121,7 +121,7 @@ export default class App extends React.Component {
           title="Bike(s)"
         />
     </Scene>
-    </Router>
+  </Router>
   )
   }
 }
